@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;1,700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Andika', sans-serif;
+  margin:0px;
+  padding:0px;
+}
+body {
+  margin:0px;
+  padding:0px;
+}
+.login_container {
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.login_card {
+  min-width:300px;
+  justify-self: center;
+  align-self: center;
+  width:70%;
+  max-width:600px;
+  box-shadow: 1px 2px 1px inset #e2e2e2,1px 2px 1px #e2e2e2;
+  padding:20px;
+}
+.center {
+  text-align:center;
+}
+.card_body{
+  margin:12px 10px 0px 20px;
+}
+.form_group {
+  margin:0px 0px 15px 0px;
+}
+.form_group > label {
+  display: block;
+}
+.form_group input {
+  display: block;
+  width:100%;
+}
+.btn_submit {
+  padding:3px 50px;
+}
+.form_group .label_forgot{
+  display:flex;
+}
+.form_group .label_forgot label {
+  display: block;
+  width:50%;
+}
+.form_group .label_forgot label:nth-child(2) {
+  text-align: right;
 }
